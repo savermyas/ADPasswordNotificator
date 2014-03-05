@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Password Notifier</comment>
+<entry key="ldap">DC=sandbox,DC=local</entry>
+<entry key="postmasterlist">устарел пароль пользователя %users%</entry>
+<entry key="password">AtlthdF_17</entry>
+<entry key="domaincontroler">sandbox</entry>
+<entry key="username">tester</entry>
+<entry key="clientsubject">Истекает срок действия вашего пароля</entry>
+<entry key="mail.host">sandbox.sandbox.local</entry>
+<entry key="maximumPasswordAge">42</entry>
+<entry key="hour">0</entry>
+<entry key="time">03:00</entry>
+<entry key="ldapport">389</entry>
+<entry key="port">25</entry>
+<entry key="enable">true</entry>
+<entry key="basedn">DC=sandbox,DC=local</entry>
+<entry key="postmaster">tester@sandbox.local</entry>
+<entry key="from">tester@sandbox.local</entry>
+<entry key="usertext">Уважаемый %username%!
+Срок действия вашего пароля истекает через %days% дней.
+Убедительная просьба - проследовать по ссылке http:\\exchange и обновить ваш пароль.
+С уважением, 
+Администрация.</entry>
+<entry key="sheduletype">0</entry>
+<entry key="admintext">Информация для размышления:
+%information%</entry>
+<entry key="expire">110</entry>
+<entry key="adminsubject">Отчёт об учётках, истечение пароля которых грядёт</entry>
+<entry key="sendtousers">true</entry>
+<entry key="date"/>
+<entry key="dayofweek">7</entry>
+<entry key="domain">RPSPOLYGON</entry>
+<entry key="mailID"/>
+</properties>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Password Notifier</comment>
+<entry key="ldap">DC=GU,DC=VOLOGDA,DC=CBR,DC=RU</entry>
+<entry key="postmasterlist">устарел пароль пользователя %users%</entry>
+<entry key="password">P@ssw0rd</entry>
+<entry key="domaincontroler">aux2000.gu.vologda.cbr.ru</entry>
+<entry key="username">exchange</entry>
+<entry key="mail.host">exchange.gu.vologda.cbr.ru</entry>
+<entry key="subject">Сообщение об окончании срока действия пароля</entry>
+<entry key="maximumPasswordAge">180</entry>
+<entry key="time">03:00</entry>
+<entry key="port">25</entry>
+<entry key="userslist"> Пользователь %users%! Срок действия Вашего пароля истекает через %day% дней. Для смены пароля перейдите по следующей ссылке &lt;http://172.20.0.151/exchange&gt; </entry>
+<entry key="enable">true</entry>
+<entry key="postmaster">postmaster@vologda.cbr.ru</entry>
+<entry key="from">postmaster@vologda.cbr.ru</entry>
+<entry key="expire">5</entry>
+<entry key="date"/>
+<entry key="mailID"/>
+<entry key="domain">GU</entry>
+</properties>

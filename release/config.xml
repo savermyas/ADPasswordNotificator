@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Password Notifier</comment>
+<entry key="password">password</entry>
+<entry key="domaincontroler">controllername.com</entry>
+<entry key="username">username</entry>
+<entry key="clientsubject">Password notification</entry>
+<entry key="mail.host">mailhost.company.com</entry>
+<entry key="maximumPasswordAge">180</entry>
+<entry key="time">03:00</entry>
+<entry key="port">25</entry>
+<entry key="enable">true</entry>
+<entry key="basedn">DC=TEST,DC=COM</entry>
+<entry key="postmaster">postmaster@yourpostdomain.com</entry>
+<entry key="from">postmaster@yourpostdomain.com</entry>
+<entry key="usertext"> Dear %users%! Your password expires in %day% days. To change your password go to &lt;http://changepass.com&gt; </entry>
+<entry key="adminsubject">password of %users% expired</entry>
+<entry key="expire">5</entry>
+<entry key="date"/>
+<entry key="dayofweek">1</entry>
+<entry key="mailID"/>
+<entry key="domain">ENTERYOURDOMAINNAME</entry>
+</properties>
