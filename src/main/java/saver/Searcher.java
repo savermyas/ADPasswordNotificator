@@ -149,48 +149,37 @@ public class Searcher
 		
 	}
 
-	private void sendMsgsToUsers() 
-	{
-		for(int i = 0; i<users.size(); i++)
-		{
+	private void sendMsgsToUsers() {
+		for (int i = 0; i < users.size(); i++) {
 			UserData d = users.get(i);
-			
+
 			//if(!(hist.contains(d.mail)))
-			{
+
 				// if((maxPwdAgeDays-d.pwdAge)>(new Integer((String) ConfigWrapper.prop.get("expire"))).intValue())
 				try {
-					InternetAddress[] clientAddress = {new InternetAddress (d.mail)};
+					InternetAddress[] clientAddress = {new InternetAddress(d.mail)};
 					Transport tr = session.getTransport("smtp");
 					tr.connect();
 					String usrtxt = ConfigWrapper.prop.getProperty("usertext");
 					usrtxt = usrtxt.replaceAll("%username%", d.mail);
-					usrtxt = usrtxt.replaceAll("%days%", ""+(maxPwdAgeDays-d.pwdAge));
+					usrtxt = usrtxt.replaceAll("%days%", "" + (maxPwdAgeDays - d.pwdAge));
 					msgToUser.setText(usrtxt, "koi8-r");
 					msgToUser.setSubject(ConfigWrapper.prop.getProperty("clientsubject"), "koi8-r");
 					msgToUser.setSentDate(new Date());
 					System.out.println(usrtxt);
-					if((maxPwdAgeDays-d.pwdAge)>(new Integer((String) ConfigWrapper.prop.get("expire"))).intValue())
-					{
-						if(hist.contains(d.mail))
-						{
+					if ((maxPwdAgeDays - d.pwdAge) > (new Integer((String) ConfigWrapper.prop.get("expire"))).intValue()) {
+						if (hist.contains(d.mail)) {
 							hist.remove(d.mail);
 							System.out.println("NOT SENT. CHANGED OK.");
-						}
-						else
-						{
+						} else {
 							System.out.println("NOT SENT. OK.");
 						}
-						
-					}
-					else
-					if(!(hist.contains(d.mail))&&((maxPwdAgeDays-d.pwdAge)>0))
-					{
-					   tr.sendMessage(msgToUser, clientAddress);
-					   System.out.println("SENT");
-					   hist.add(d.mail);
-					}
-					else
-					{
+
+					} else if (!(hist.contains(d.mail)) && ((maxPwdAgeDays - d.pwdAge) > 0)) {
+						tr.sendMessage(msgToUser, clientAddress);
+						System.out.println("SENT");
+						hist.add(d.mail);
+					} else {
 						System.out.println("NOT SENT. IN HISTORY.");
 					}
 				} catch (AddressException e) {
@@ -203,8 +192,9 @@ public class Searcher
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-			}
+			
 		}
+	};
 
 	private void sendMsgToAdmin() 
 	{
