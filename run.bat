@@ -1,1 +1,0 @@
-java -cp .\bin\;.\lib\mail.jar saver.MainTray
