@@ -3,8 +3,8 @@
 <properties>
 <comment>Password Notifier</comment>
 <entry key="ldap">DC=sandbox,DC=local</entry>
-<entry key="postmasterlist">устарел пароль пользователя %users%</entry>
-<entry key="password">AtlthdF_17</entry>
+<entry key="postmasterlist">Users password expiration: %users%</entry>
+<entry key="password">P@SSW0RD</entry>
 <entry key="domaincontroler">sandbox</entry>
 <entry key="username">tester</entry>
 <entry key="clientsubject">Истекает срок действия вашего пароля</entry>
@@ -18,16 +18,17 @@
 <entry key="basedn">DC=sandbox,DC=local</entry>
 <entry key="postmaster">tester@sandbox.local</entry>
 <entry key="from">tester@sandbox.local</entry>
-<entry key="usertext">Уважаемый %username%!
-Срок действия вашего пароля истекает через %days% дней.
-Убедительная просьба - проследовать по ссылке http:\\exchange и обновить ваш пароль.
-С уважением, 
-Администрация.</entry>
+<entry key="usertext">Dear %username%!
+Your account password gets expired in %days% days.
+Please, follow the link http:\\exchange and update your password.
+-----------
+Regards,
+Operations team.</entry>
 <entry key="sheduletype">0</entry>
-<entry key="admintext">Информация для размышления:
+<entry key="admintext">Additional information:
 %information%</entry>
 <entry key="expire">110</entry>
-<entry key="adminsubject">Отчёт об учётках, истечение пароля которых грядёт</entry>
+<entry key="adminsubject">Accounts expiring soon report</entry>
 <entry key="sendtousers">true</entry>
 <entry key="date"/>
 <entry key="dayofweek">7</entry>
