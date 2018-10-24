@@ -1,5 +1,5 @@
 # ADPasswordNotificator
-Java tool to notify your domain users about their password expiration by e-mail.
+Java tool to notify ad users of password expiration by e-mail.
 
 # Build
 
